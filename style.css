@@ -70,7 +70,7 @@ body{
 /* header section -----------------------------*/
 header{
     width: 100%;
-    padding: 38px 100px;
+    padding: 35px 100px;
     position: fixed;
     top: 0;
     right: 0;
@@ -144,10 +144,14 @@ header{
 }
 .home-image img{
     max-width: 100%;
-    width: 500px;
+    width: 450px;
     height: auto;
     position: static;
     border-radius: 50%;
+    object-fit: cover;
+}
+.home-text{
+
 }
 .home-text h5{
     font-size: 1.4rem;
@@ -179,17 +183,20 @@ font-weight: 500;
 
 .home-text .btn{
     /* background: #ffa200; */
-    background: var(--hover);
+    /* background: var(--hover); */
     /* color: var(--text-color); */
+    background: transparent;
     outline: none;
     padding: 8px 20px;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 1rem;
     font-weight: 600px;
     color: #000;
     line-height: 24px;
     cursor: pointer;
+    border: 2px solid var(--hover);
+    color: #fff;
    
 }
 .home-text .btn:hover{
